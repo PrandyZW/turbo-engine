@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    dynamic:
+      primary: engine
+    engine:
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://124.222.17.82:3306/t_engine?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&autoReconnect=true
+      username: root
+      password: Yzw@5173
+      driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case=true: true
+
+logging:
+  config: classpath:logback-spring.xml
+server:
+  port: 8080
