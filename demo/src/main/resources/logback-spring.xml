@@ -7,7 +7,7 @@
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
             <pattern>
-                [%level][%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}][%logger:%L][%thread]||traceid=%X{X-B3-TraceId:-}||%msg%n
+                [%level][%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}][%logger:%L][%thread]||traceId=%X{X-B3-TraceId:-}||%msg%n
             </pattern>
         </encoder>
     </appender>
